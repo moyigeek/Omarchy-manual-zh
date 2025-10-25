@@ -5,7 +5,7 @@ FROM rust:1.78 as builder
 WORKDIR /src
 
 # Install mdbook
-RUN cargo install mdbook --version 0.5.11
+RUN cargo install mdbook 
 
 # Copy source and build
 COPY . .
