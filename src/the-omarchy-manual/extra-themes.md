@@ -1,0 +1,77 @@
+# Extra themes
+
+You can install any of these themes by copying the GitHub URL and selecting `Install > Style > Theme` via the Omarchy menu (`Super + Alt + Space`). If you want to remove it again, just use `Remove > Style > Theme` and select it there.
+
+Below are many user-contributed themes (image previews link to the original site). To install, copy the GitHub repository URL and use the Omarchy menu Install > Style > Theme.
+
+- Aetheria — https://github.com/JJDizz1L/aetheria
+- Amberbyte — https://github.com/tahfizhabib/omarchy-amberbyte-theme
+- Arc Blueberry — https://github.com/vale-c/omarchy-arc-blueberry
+- Archwave — https://github.com/davidguttman/archwave
+- Ash — https://github.com/bjarneo/omarchy-ash-theme
+- Artzen — https://github.com/tahfizhabib/omarchy-artzen-theme
+- Aura — https://github.com/bjarneo/omarchy-aura-theme
+- All Hallow's Eve — https://github.com/guilhermetk/omarchy-all-hallows-eve-theme
+- Ayaka — https://github.com/abhijeet-swami/omarchy-ayaka-theme
+- Azure Glow — https://github.com/Hydradevx/omarchy-azure-glow-theme
+- Bauhaus — https://github.com/somerocketeer/omarchy-bauhaus-theme
+- Black Gold — https://github.com/HANCORE-linux/omarchy-blackgold-theme
+- Black Turq — https://github.com/HANCORE-linux/omarchy-blackturq-theme
+- bluedotrb — https://github.com/dotsilva/omarchy-bluedotrb-theme
+- Blue Ridge Dark — https://github.com/hipsterusername/omarchy-blueridge-dark-theme
+- Citrus Cynapse — https://github.com/Grey-007/citrus-cynapse
+- Cobalt2 — https://github.com/hoblin/omarchy-cobalt2-theme
+- Darcula — https://github.com/noahljungberg/omarchy-darcula-theme
+- Demon — https://github.com/HANCORE-linux/omarchy-demon-theme
+- Dotrb — https://github.com/dotsilva/omarchy-dotrb-theme
+- Drac — https://github.com/ShehabShaef/omarchy-drac-theme
+- Dracula — https://github.com/catlee/omarchy-dracula-theme
+- Evergarden — https://github.com/celsobenedetti/omarchy-evergarden
+- Felix — https://github.com/TyRichards/omarchy-felix-theme
+- Fireside — https://github.com/bjarneo/omarchy-fireside-theme
+- Flexoki Light — https://github.com/euandeas/omarchy-flexoki-light-theme
+- Flexoki Dark — https://github.com/euandeas/omarchy-flexoki-dark-theme
+- Forest Green — https://github.com/abhijeet-swami/omarchy-forest-green-theme
+- Frost — https://github.com/bjarneo/omarchy-frost-theme
+- Futurism — https://github.com/bjarneo/omarchy-futurism-theme
+- Gold Rush — https://github.com/tahayvr/omarchy-gold-rush-theme
+- Green Garden — https://github.com/kalk-ak/omarchy-green-garden-theme
+- Green Hakkar — https://github.com/joaquinmeza/omarchy-hakker-green-theme
+- Infernium — https://github.com/RiO7MAKK3R/omarchy-infernium-dark-theme
+- Mars — https://github.com/steve-lohmeyer/omarchy-mars-theme
+- Midnight — https://github.com/JaxonWright/omarchy-midnight-theme
+- Milky Matcha — https://github.com/hipsterusername/omarchy-milkmatcha-light-theme
+- Monochrome — https://github.com/Swarnim114/omarchy-monochrome-theme
+- Monokai — https://github.com/bjarneo/omarchy-monokai-theme
+- Nagai Poolside — https://github.com/somerocketeer/omarchy-nagai-poolside-theme
+- Neovoid — https://github.com/RiO7MAKK3R/omarchy-neovoid-theme
+- NES — https://github.com/bjarneo/omarchy-nes-theme
+- Omacarchy — https://github.com/RiO7MAKK3R/omarchy-omacarchy-theme
+- One Dark Pro — https://github.com/sc0ttman/omarchy-one-dark-pro-theme
+- Pandora — https://github.com/imbypass/omarchy-pandora-theme
+- Pina — https://github.com/bjarneo/omarchy-pina-theme
+- Pink Blood — https://github.com/ITSZXY/pink-blood-omarchy-theme
+- Pulsar — https://github.com/bjarneo/omarchy-pulsar-theme
+- Purple Moon — https://github.com/Grey-007/purple-moon
+- Purplewave — https://github.com/dotsilva/omarchy-purplewave-theme
+- RetroPC — https://github.com/rondilley/omarchy-retropc-theme
+- Rose Pine Dark — https://github.com/guilhermetk/omarchy-rose-pine-dark
+- Rose of Dune — https://github.com/HANCORE-linux/omarchy-roseofdune-theme
+- Sakura — https://github.com/bjarneo/omarchy-sakura-theme
+- Sapphire — https://github.com/HANCORE-linux/omarchy-sapphire-theme
+- Shades of Jade — https://github.com/HANCORE-linux/omarchy-shadesofjade-theme
+- Space Monkey — https://github.com/TyRichards/omarchy-space-monkey-theme
+- Snow — https://github.com/bjarneo/omarchy-snow-theme
+- Solarized — https://github.com/Gazler/omarchy-solarized-theme
+- Solarized Light — https://github.com/dfrico/omarchy-solarized-light-theme
+- Solarized Osaka — https://github.com/motorsss/omarchy-solarizedosaka-theme
+- Sunset — https://github.com/rondilley/omarchy-sunset-theme
+- Super Game Bro — https://github.com/TyRichards/omarchy-super-game-bro-theme
+- Synthwave '84 — https://github.com/omacom-io/omarchy-synthwave84-theme
+- Temerald — https://github.com/Ahmad-Mtr/omarchy-temerald-theme
+- Tokyo Night OLED — https://github.com/Justin-De-Sio/omarchy-tokyoled-theme
+- Tycho — https://github.com/leonardobetti/omarchy-tycho
+- Waveform Dark — https://github.com/hipsterusername/omarchy-waveform-dark-theme
+- Vesper — https://github.com/thmoee/omarchy-vesper-theme
+- VHS 80 — https://github.com/tahayvr/omarchy-vhs80-theme
+- Void — https://github.com/vyrx-dev/omarchy-void-theme
