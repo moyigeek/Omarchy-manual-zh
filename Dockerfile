@@ -1,6 +1,6 @@
 ## Multi-stage Dockerfile to build mdBook site and serve with nginx
 ## Stage 1: builder - build the book using mdbook
-FROM rust:1.78 as builder
+FROM rust:1.90 as builder
 
 WORKDIR /src
 
