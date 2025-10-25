@@ -1,0 +1,10 @@
+target
+book
+node_modules
+.git
+.gitignore
+*.log
+*.tmp
+tmp
+dist
+.DS_Store
