@@ -1,33 +1,28 @@
 # Monitors
+Omarchy assumes you're running on a 2x-capable retina-class display by default. This is what you need to get those nice, crisp programmer fonts. It's what laptops like the Framework 13 with it's 2.8K monitor is optimized for. It's what you'd want to run on a 27" 5K [Apple Studio Display](https://www.apple.com/studio-display/)/[ProArt PA27JCV](https://www.asus.com/us/displays-desktops/monitors/proart/proart-display-5k-pa27jcv/)/[Samsung S9](https://www.samsung.com/us/computing/monitors/5k/27-viewfinity-s9-5k-monitor-with-thunderbolt-4-matte-display-and-smart-features-ls27c900panxza/)/[Kuycon G27P](https://kuycon.us/monitors/G27P/) or 32" 6K [Apple XDR](https://www.apple.com/pro-display-xdr/)/[ProArt PA32QCV](https://www.asus.com/displays-desktops/monitors/proart/proart-display-6k-pa32qcv/)/[Kuycon G32P](https://kuycon.us/monitors/G32P/).
 
-Omarchy 假设使用 2x 高分辨率显示器（retina-class）。若你的显示为 1x，请调整 Hyprland 或 GDK 缩放（例如在 `~/.config/hypr/hyprland.conf` 中设置 `GDK_SCALE`）。
+So if you're not running a display with a PPI of 218 or above, you'll want to change the monitor settings. For example, if you have a 27" or 32" 4K, you can use fractional scaling by opening `~/.config/hypr/monitors.conf` and switching to the recommendation for that combo:
 
-根据显示器和分辨率，可能需要调整缩放与字体设置以获得最佳体验。
+```
+env = GDK_SCALE,1.75
+monitor=,preferred,auto,1.666667
+```
 
-## 显示器设置示例
+If you're using a 1080p or 1440p display, you'll probably just want to use 1x scaling, so you can use:
 
-这是一些常见显示器的推荐设置：
+```
+env = GDK_SCALE,1
+monitor=,preferred,auto,1
+```
 
-- 对于 27" 或 32" 4K 显示器，使用以下设置：
+Changes to `GDK_SCALE` apply to applications started after the change. So make sure you quit the windows that you have that are oversized after the change (or close all windows with `Ctrl + Alt + Del`!).
 
-  ```
-  env = GDK_SCALE,1.75
-  monitor=,preferred,auto,1.666667
-  ```
+Just know that it's running Linux on low-resolution displays and using fractional scaling that's given the platform a bad reputation for fussy fonts. It's an entirely self-inflicted situation. With a retina-class display (218ppi+) and 2x scaling, your fonts will look every bit as great on Linux as they would on the Mac (if not better, because no artificial font smoothening above what the font designer intended is applied!).
 
-- 对于 1080p 或 1440p 显示器，使用以下设置：
+___
 
-  ```
-  env = GDK_SCALE,1
-  monitor=,preferred,auto,1
-  ```
+### Arranging multiple screens
 
-请根据你的实际显示器尺寸和分辨率调整上述设置。
+Hyprland works great with multiple screens. Read more about how to lay them out in [the Hyprland monitor documentation](https://wiki.hypr.land/Configuring/Monitors/). You can [bind specific workspaces to specific monitors](https://wiki.hypr.land/Configuring/Workspace-Rules/) as well.
 
-> **注意：** `GDK_SCALE` 的更改仅适用于更改后启动的应用程序。请确保在更改后退出所有已打开的窗口，以避免出现显示异常的情况。
-
-## 多显示器排列
-
-Hyprland 对于多显示器的支持非常出色。你可以阅读 [Hyprland 显示器文档](https://wiki.hypr.land/Configuring/Monitors/) 了解如何布局多个显示器。你也可以 [将特定工作区绑定到特定显示器](https://wiki.hypr.land/Configuring/Workspace-Rules/)。
-
-如果你想要一个 TUI 工具来帮助你定位多个屏幕，可以查看 [Hyprmon](https://github.com/erans/hyprmon/)。
+You can also checkout [Hyprmon](https://github.com/erans/hyprmon/), if you'd like a TUI to help you with the positioning of multiple screens.

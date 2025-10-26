@@ -1,8 +1,33 @@
 # 商业图形应用
 
-Omarchy 并不排斥商业软件，有时商业应用提供更合适的解决方案。示例：
+Omarchy is mostly focused on providing free, open source software, but it's not religious about it. Sometimes the best solution is a commercial offering, and that's just fine. Here are some of the options we provide an easy installation for.
 
-- 1Password：密码管理器，提供命令行工具用于脚本内密钥查找。
-- Typora：简洁的写作工具，支持 Markdown，提供试用期和付费许可。
+## 1Password
 
-这些应用可以通过 Omarchy 菜单方便地安装。
+Keeping your passwords in a password manager is a best practice. Doubly so if you're working with a team. And [1password](https://1password.com/) is a great solution, which also comes with a command line tool for integrating key lookups in scripts.
+
+You start 1Password with `Super + Shift + /`.
+
+## Typora
+
+[Typora](https://typora.io/) is a minimal, distraction-free writing tool in the same spirit as iA Writer for the Mac and Windows. Like Obsidian, it uses Markdown for formatting, but in a way that's focused on writing individual pieces or essays and very little else.
+
+Best used in full screen mode (F11) for that totally immersive nothing-but-words look.
+
+It comes with a 15-day free trial, and is then a $15 one-time cost.
+
+You start Typora using the application launcher (`Super + Space`).
+
+## Dropbox
+
+[Dropbox](https://www.dropbox.com/) is a great way to sync files between machines while keeping a backup in the cloud. To set it up, select _Install > Service > Dropbox_ from the Omarchy menu.
+
+## Tailscale
+
+[Tailscale](https://tailscale.com/) is a mesh VPN that makes getting access to all your computers and servers over the internet securely super simple way. To set it up, select _Install > Service > Tailscale_ from the Omarchy menu.
+
+## Spotify
+
+[Spotify](https://spotify.com/) is the world's most popular streaming music service. And the Linux application provides everything you'd expect, including offline playing.
+
+You start Spotify using `Super + Shift + M`.

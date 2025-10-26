@@ -1,30 +1,42 @@
 # Dotfiles
 
-Omarchy is primarily configured through the dotfiles stored in `~/.config`. Those are intended to be your personal files. Files under `~/.local/share/omarchy` are the distribution defaults and should generally not be edited directly; instead, override values in `~/.config` so upgrades are easier.
+Omarchy is primarily configured through the so-called dotfiles that live in `~/.config`. Those are considered your files for your changes. The files that live in `~/.local/share/omarchy` belong to Omarchy itself, and you ideally shouldn't be messing with those. If you need to change anything in `~/.local/share/omarchy`, you should be overwriting the value in `~/.config` instead.
 
-Most settings can be edited through the Omarchy menu: Setup > Configs > [process]. When you use the menu editor, Omarchy will often restart the affected processes automatically after you save and exit the editor.
+Almost everything can be edited through _Setup > Configs > \[process\]_ through the Omarchy menu (`Super + Alt + Space`). When you do it this way, any process that needs restarting after config edits automatically will be after you quit the Neovim editor (`:wq`, remember!).
 
-Here are some key files and what they control:
+Here's a list of the key files in `~/.config` and what they control:
 
-- `~/.config/hypr/hyprland.conf` — Controls keybindings, default apps, and Hyprland configuration.
-- `~/.config/hypr/monitors.conf` — Controls monitor configuration: resolution, position, and scaling.
-- `~/.config/hypr/hypridle.conf` — Idle and sleep settings.
-- `~/.config/hypr/hyprlock.conf` — Lock screen configuration (often symlinked to theme styling).
-- `~/.config/waybar/config.jsonc` — Top bar configuration.
-- `~/.config/waybar/style.css` — Top bar CSS (symlinked to theme for styling).
-- `~/.config/walker/config.toml` — Launcher configuration (Walker).
-- `~/.config/alacritty/alacritty.toml` — Terminal configuration for Alacritty.
-- `~/.config/uwsm/default` — Default $EDITOR and $TERMINAL used by Omarchy tools.
-- `~/.XCompose` — Defines quick emojis and name/email autocompletions. Run `omarchy-restart-xcompose` after editing.
+| File | Purpose |
+| --- | --- |
+| `~/.config/hypr/hyprland.conf` | Controls keybindings, default apps, and everything Hyprland. [Learn more about Hyprland configs](https://wiki.hypr.land/Configuring/). |
+| `~/.config/hypr/monitors.conf` | Controls your monitors, resolution, and position. |
+| `~/.config/hypr/hypridle.conf` | Controls your idle/sleep settings. Shouldn't need touching. |
+| `~/.config/hypr/hyprlock.conf` | Controls your lock screen, but this is symlinked to your theme for styling. |
+| `~/.config/waybar/config.jsonc` | Controls your top bar that's run with waybar. [Learn more about Waybar configs](https://github.com/Alexays/Waybar/wiki/Configuration). |
+| `~/.config/waybar/style.css` | Controls your top bar design, but it's symlinked to your theme. |
+| `~/.config/walker/config.toml` | Controls your launcher that's run with Walker. |
+| `~/.config/alacritty/alacritty.toml` | Controls your terminal. [Learn more about Alacritty configs](https://alacritty.org/config-alacritty.html). |
+| `~/.config/uwsm/default` | Controls your default $EDITOR and $TERMINAL. Requires relaunching Hyprland when changed. |
+| `~/.XCompose` | Defines your quick-access emoji and name/email autocomplete. Make sure to run `omarchy-restart-xcompose` after making changes. |
 
-If you make many changes, consider backing up your dotfiles; GNU Stow is a popular tool to manage and deploy dotfiles from a Git repository.
+If you end up making a lot of changes to tweak your own setup, it's a good idea to backup all these dotfiles. [Stow is a great way to do that](https://www.youtube.com/watch?v=NoFiYOqnC4o).
+
+___
 
 ### Adding your own shell exports, functions, and aliases
 
-Omarchy includes many useful aliases and functions by default. Add personal aliases, exports, and functions to `~/.bashrc` (this file is preserved on updates). If you want to override defaults, set your values in `~/.config/*` rather than editing files under `~/.local/share/omarchy`.
+Omarchy ships with a bunch of ergonomic aliases and helpful functions, but it's very common to want to add your own. You should add both aliases, functions, and exports in `~/.bashrc`. This file will not be overwritten on updates. If you want to change any of the Omarchy defaults, you can also safely add them here.
+
+___
 
 ### Changing internal Omarchy files
 
-Avoid editing files under `~/.local/share/omarchy` unless you are prepared to maintain those changes across updates. If you modify those files, you'll need to reapply or commit changes before using `omarchy-update`.
+Look, this is your computer. You can do whatever you want with it, but I would advise against making changes to the files in `~/.local/share/omarchy` directly. It'll make it harder for you to upgrade in the future. You're better off just overwriting any default values you don't like in the `~/.config/*` folder instead.
 
-If you intentionally change internal Omarchy files, the project provides tools to assist with committing changes; follow the instructions in the menu if you are doing advanced modifications.
+You can change just about everything that way, like the default keybindings. Just edit `~/.config/hypr/hyprland.conf` to, say, replace [Obsidian](https://obsidian.md/) with [Joplin](https://joplinapp.org/) (install with `yay -S joplin-bin`):
+
+```
+bind = SUPER SHIFT, O, exec, joplin
+```
+
+If you insist on changing internal Omarchy files, you'll need to commit your changes before you can use `omarchy-update`. You can do that with `gcam "Look ma! I'm breaking the rules!"` from inside the `~/.local/share/omarchy` directory. Ain't nobody here to tell you what to do!

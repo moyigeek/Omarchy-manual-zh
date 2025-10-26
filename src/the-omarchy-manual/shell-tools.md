@@ -1,11 +1,39 @@
 # Shell 工具
 
-Omarchy 随系统提供一系列现代命令行工具，目的在于提升文件查找、内容搜索与目录导航的效率。下面列出常用工具与其用途：
+In addition to the standard Linux tools, Omarchy also ships with a bunch of enhanced shell tools. Here are the key ones.
 
-- fzf：一个交互式模糊查找工具，常通过别名 `ff` 启动。可在命令历史中用 `Ctrl + R` 调出模糊搜索，并在 Neovim 中作为文件查找后端使用。
-- zoxide：替代 `cd` 的目录记忆工具，根据使用频率与习惯提供快速跳转。
-- ripgrep（rg）：基于 Rust 的高速文本搜索工具，适合在大型代码库中查找模式。
-- eza：增强版的 `ls`，带颜色、图标与丰富的列表选项（如 `lt`, `lsa` 等别名）。
-- fd：更友好的 `find` 替代，语法简洁、速度快。
+## fzf
 
-这些工具的手册通常可通过 `man <tool>` 查看；在 Omarchy 中多数也已绑定为常用快捷操作。更多示例与别名配置可在系统的 shell 配置或手册章节中找到。
+[fzf](https://junegunn.github.io/fzf/) gives you fuzzy finding of files via the `ff` alias. Go to any directory, type `ff`, and you'll be able to fuzzy find your way to any file in that tree, while seeing a preview of the files you're narrowing down on the right-hand side.
+
+You can use `Ctrl + R` to use fzf to fuzzy find through your command history.
+
+This tool is also used by Neovim when you type `Space Space`.
+
+The full manual can be found via `man fzf`.
+
+## Zoxide
+
+[Zoxide](https://github.com/ajeetdsouza/zoxide) is a replacement for cd. It remembers the directories you've been in, so you can more easily jump to them next time. Say you do `cd ~/.local/share/omarchy` once. Next time, you can just do `cd omarchy` (or even just `cd oma`), and Zoxide will take you directly there.
+
+The full manual can be found via `man zoxide`.
+
+## ripgrep
+
+[ripgrep](https://github.com/BurntSushi/ripgrep) searches the contents of files by using `rg <pattern> <path>`, like `rg Controller app/` to find all mentions of `Controller` in the directory app.
+
+This tool is also used by Neovim when you type `Space S G`.
+
+The full manual can be found via `man rg`.
+
+## eza
+
+[eza](https://eza.rocks/) is a replacement for ls. It gives you directory listings with more information, color, and icons. By default, eza has been aliased as ls. You can also use `lt` to get a listing of two-deep levels of nesting. `lsa` gives you a listing including hidden files. And `lta` a nested listing with hidden files.
+
+The full manual can be found via `man eza`.
+
+## fd
+
+[fd](https://github.com/sharkdp/fd) is an easier to use replacement for `find`. Use `fd person.rb` to find a file called `person.rb` within the current tree. `fd person.rb /` will search the entire file system. `fd person.rb / -H` searches the entire file system, including hidden directories.
+
+The full manual can be found via `man fd`.
